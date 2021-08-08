@@ -1,0 +1,209 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: antiquewhite;
+    font-family: 'Open Sans', sans-serif;
+}
+.main{
+ width: 100%;
+ height: auto;
+    display: flex;
+}
+.first_box{
+    width: 250px;
+    height:100vh;
+    display: grid;
+    background-color: blanchedalmond;
+    position: sticky;
+    top: 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.links{
+    width: 100%;
+    display: grid;
+   justify-content: center;
+   align-items: center;
+
+
+}
+.links a{
+    text-decoration: none;
+    margin-top: 10px;
+    transition: 1s;
+}
+.links a:hover{
+    transform: translatex(20px);
+}
+.social{
+    display: flex;
+    justify-content: space-around;
+}
+.social a{
+    padding-top: 20px;
+}
+
+
+.second_box{
+    width: 86%;
+    height: 100%;
+    background: url('images/3.webp') no-repeat center center fixed;
+    background-size: cover;
+    background-color: white;  
+    left: 250px;  
+}
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+    justify-content: center;
+}
+.product{
+    width:200px ;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background-color: white;
+    color: black;
+}
+.product h1{
+    margin: 20px 0;
+
+}
+.product p{
+    margin: 20px 0;
+
+}
+.product a{
+    margin-top: 20px;
+    text-decoration: none;
+    color:white;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    display: block;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+
+}
+.product img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+.product a:hover{
+    transform: translateX(5px);
+}
+.orders{
+    padding: 20px;
+    color: white;
+
+}
+.orders .wrapper{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 900px;
+
+}
+.order_box{
+    width: 20px;
+}
+.holder{
+    display: flex;
+
+}
+.child{
+    flex:3;
+}
+.child2{
+    flex: 1; 
+}
+.child2 img{
+    width: 100%;
+    margin: 15px;
+    border-radius: 8px;
+}
+.child2 button{
+    border: 0;
+    cursor: pointer;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 14px 0;
+
+}
+button{
+    color: white;
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    border: 1px;
+    height: 25px;
+    border-radius: 8px;
+    box-shadow: 2px black;
+    transition: 0.1s;
+
+}
+.container{
+	max-width: 750px;
+	margin: 0 auto;
+}
+.bigimage-holder img{
+	width: 100%;
+	display: block;
+}
+.smallimages-holder{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 15px;
+}
+.smallimages-holder img{
+	width: 100%;
+	cursor: pointer;
+}
+.bigimage-holder{
+	margin-bottom: 25px;
+	overflow: hidden;
+	position: relative;
+}
+.imagetext{
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+	background-color: #000;
+	opacity: .8;
+	font-size: 18px;
+	color: #fff;
+	padding: 25px;
+}
+.table th, .table td{
+    padding: 14px 35px;
+    color: white;
+    text-align: left;
+
+}
+.prices{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.prices a{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+.footer{
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.24);
+}

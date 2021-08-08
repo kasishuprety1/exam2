@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GALLERY</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
+
+    </head>
+    <body>
+        <div class="main">
+            <div class="first_box">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="links">
+                    <a href="index.html"><i class="fas fa-home"></i>HOME</a>
+                    <a href="product.html"><i class="fas fa-air-freshener"></i></i>PRODUCTS</a>
+                    <a href="order.html"><i class="fas fa-shopping-basket"></i></i>ORDER</a>
+                    <a href="price.html"><i class="fas fa-money-bill-wave"></i>PRICES</a>
+                    <a href="contact.html"><i class="far fa-address-book"></i>CONTACT US</a>
+                    <a href="location.html"><i class="fas fa-map-marker-alt"></i>LOCATION</a>
+                    <a href="gallery.html"><i class="fab fa-envira"></i>GALLERY</a>
+            
+                </div>
+                <div class="social">
+                    <a href="https://www.facebook.com/kasish.uprety.7/"><i class="fab fa-facebook"></i></a>
+                    <a href = "mailto: kasishuprety@gmail.com"><i class="far fa-envelope"></i></a>
+                    <a href="https://www.instagram.com/kasis_uprety/"><i class="fab fa-instagram"></i></a>
+                </div>
+         
+            </div>
+                <div class="second_box">
+                    <div class="container">
+                        <div class="bigimage-holder">
+                            <img src="./images/cake.jpg" alt="CAKE" id="bigImage">
+                            <div class="imagetext" id="imageText">
+                                CAKE
+                            </div>
+                        </div>
+                        <div class="smallimages-holder">
+                            <img src="./images/cake.jpg" alt="CAKE" onclick="gallery(this)">
+                            <img src="./images/cookies.jpg" alt="COOKIES" onclick="gallery(this)">
+                            <img src="./images/cross.jpg" alt="CROSSIANT" onclick="gallery(this)">
+                            <img src="./images/cupcakes.jpg" alt="CUPCAKES" onclick="gallery(this)">
+                            <img src="./images/doughnut.jpg" alt="DOUGHNUT" onclick="gallery(this)">
+                            <img src="./images/macaron.jpg" alt="MACARON" onclick="gallery(this)">
+                            <img src="./images/roll.jpg" alt="SWISS ROLL" onclick="gallery(this)">
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <P>copyright &copy; Kasish Uprety</P>
+                    </div>
+                
+                    </div>
+                   
+            </div>
+            <script>
+                		function gallery(image){
+			let bigImage = document.getElementById('bigImage')
+			let imageText = document.getElementById('imageText')
+
+			bigImage.src = image.src
+			imageText.innerHTML = image.alt
+		}
+            </script>
+    </body>
+</html>
